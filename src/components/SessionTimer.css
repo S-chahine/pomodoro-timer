@@ -1,0 +1,17 @@
+/* SessionTimer.css */
+
+/* Remove the previous keyframes and animation */
+.session-timer-progress {
+    transition: stroke-dashoffset 1s ease-in-out;
+    /* 1s transition duration, ease-in-out timing function */
+}
+
+.session-timer {
+    display: block;
+}
+
+.session-timer circle {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+
+}
