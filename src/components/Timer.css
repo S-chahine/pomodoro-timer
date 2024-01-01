@@ -83,14 +83,17 @@ button:hover {
 /* Media queries for different screen sizes */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .container {
-        max-width: 800px;
+        max-width: 100vh;
+        max-height: 60vh;
+
         /* Adjust for medium screens */
     }
 }
 
 @media only screen and (min-width: 1025px) {
     .container {
-        max-width: 1200px;
+        max-width: 100vh;
+        max-height: 100vh;
         /* Adjust for large screens */
     }
 }
