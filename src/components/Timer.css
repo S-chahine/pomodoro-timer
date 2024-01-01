@@ -78,7 +78,42 @@ button:hover {
 }
 
 /* Media queries for different screen sizes */
-@media only screen and (min-width: 390px) and (orientation: landscape) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .container {
+        padding: 20px;
+        min-width: 400px;
+        min-height: 300px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .TimerLabel {
+        font-size: 1em;
+        /* Responsive font size */
+    }
+
+    #start_stop,
+    #reset {
+        font-size: 1.5em;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 3em;
+        height: 2.5em;
+    }
+
+    button {
+        font-size: 1em;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .Title {
+        font-size: 2em;
+        /* Responsive font size */
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+
     .container {
         padding: 20px;
         min-width: 400px;
