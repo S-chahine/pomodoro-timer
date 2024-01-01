@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #aac45d;
+    background-color: #061936;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
@@ -78,7 +78,7 @@ button:hover {
 }
 
 /* Media queries for different screen sizes */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 400px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
     .container {
         padding: 20px;
         min-width: 400px;
@@ -87,37 +87,37 @@ button:hover {
     }
 
     .TimerLabel {
-        font-size: 1em;
+        font-size: .5em;
         /* Responsive font size */
     }
 
     #start_stop,
     #reset {
-        font-size: 1.5em;
+        font-size: 1em;
         margin-left: 5px;
         margin-right: 5px;
-        width: 3em;
-        height: 2.5em;
+        width: 1em;
+        height: .5em;
     }
 
     button {
-        font-size: 1em;
-        width: 2.5em;
-        height: 2.5em;
+        font-size: .5em;
+        width: 1em;
+        height: 1em;
     }
 
     .Title {
-        font-size: 2em;
+        font-size: 1em;
         /* Responsive font size */
     }
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1080px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
 
     .container {
         padding: 20px;
-        min-width: 400px;
-        min-height: 300px;
+        min-width: 600px;
+        min-height: 450px;
         /* Adjust padding for smaller screens */
     }
 
@@ -132,17 +132,53 @@ button:hover {
         margin-left: 5px;
         margin-right: 5px;
         width: 3em;
-        height: 2.5em;
+        height: 3.5em;
     }
 
     button {
-        font-size: 1em;
-        width: 2.5em;
-        height: 2.5em;
+        font-size: 1.5em;
+        width: 3em;
+        height: 3em;
     }
 
     .Title {
+        font-size: 4em;
+        /* Responsive font size */
+    }
+}
+
+
+@media screen and (min-device-width: 1921px) {
+
+    .container {
+        padding: 20px;
+        min-width: 800px;
+        min-height: 650px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .TimerLabel {
         font-size: 2em;
+        /* Responsive font size */
+    }
+
+    #start_stop,
+    #reset {
+        font-size: 1.5em;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 4em;
+        height: 4.5em;
+    }
+
+    button {
+        font-size: 2em;
+        width: 4em;
+        height: 4em;
+    }
+
+    .Title {
+        font-size: 5em;
         /* Responsive font size */
     }
 }
