@@ -1,27 +1,26 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-
+/* Common styles for all screen sizes */
 body {
     background: linear-gradient(to left, #6286f1, #010a22);
-    /* Example gradient from blue to green */
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container {
     background-color: #061936;
-    /* White container background color */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
     text-align: center;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    /* Adjust as needed for medium and large screens */
+    margin: 0 auto;
 }
 
 .TimerLabel {
@@ -39,35 +38,27 @@ body {
 
 .session-timer {
     margin: 0 auto;
-    /* Center the SessionTimer */
 }
 
 button {
     background-color: #6cacef;
-    /* Blue button color */
     color: #fff;
     border: none;
-    padding: auto;
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    /* Make the button circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add a 3D effect */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #start_stop,
 #reset {
     background-color: #6cacef;
-    /* Blue button color */
     color: #fff;
     border: none;
-    padding: auto;
     font-size: 30px;
     font-weight: bold;
     margin-left: 5px;
@@ -76,20 +67,30 @@ button {
     width: 100px;
     height: 70px;
     border-radius: 15%;
-    /* Make the button circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add a 3D effect */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background-color: #4b78a9;
-    /* Darker blue on hover */
     transform: scale(1.05);
-    /* Add a slight scale effect on hover */
 }
 
 .svg1 {
     margin-top: 10px;
-    padding: auto;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 800px;
+        /* Adjust for medium screens */
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        /* Adjust for large screens */
+    }
 }
