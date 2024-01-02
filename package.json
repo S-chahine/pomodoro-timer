@@ -1,6 +1,6 @@
 {
   "homepage": "http://s-chahine.github.io/pomodoro-timer",
-  "name": "pomodoro-clock-app",
+  "name": "pomodoro-timer-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
